@@ -33,6 +33,5 @@ class BaseApi(object):
         if kwargs:
             params_path = "&".join(f"{key}={value}" for key, value in kwargs.items())
             path = path + "?" + params_path
-            print(path)
 
         return path
